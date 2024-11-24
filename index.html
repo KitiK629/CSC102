@@ -1,23 +1,51 @@
 <!-- This is an HTML comment -->
- <!-- Caitlin Hiner -->
+<!-- Caitlin Hiner -->
+<!-- This tells that the document type is a HTML file -->
 <!DOCTYPE html>
+<!-- The default language will be English -->
 <html lang="en">
+<!-- This starts the head of the document -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- The title of the document -->
     <title>CSC 102</title>
+<!-- References the stylesheet -->
+    <link rel="stylesheet" href="main.css">
+<!-- This is for my image to center it -->
+    <style>
+        img{
+            width: 50%;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <!-- end of head tag -->
 </head>
+<!-- Start of body tag -->
 <body>
+    <!-- Header with a center align -->
     <h1 style="text-align: center;">CSC 102 Intro to Programming</h1>
+    <!-- Horizontal Rule -->
     <hr>
+    <!-- Paragraph -->
     <p>
-        <img id="memeImage" src="C:\Users\owner\OneDrive\Desktop\GitHub\CSC102\img_2_1732197386811.jpg" style="height: 300px; width: 300px;">
+         <!-- This is a division used so that i could define properties of my image -->
+        <div>
+            <img id="memeImage" src="C:\Users\owner\OneDrive\Desktop\GitHub\CSC102\img_2_1732197386811.jpg" style="height: 350px; width: 350px;">
+        </div>
     </p> 
+    <!-- Takes you to the boards page -->
     <p>
-        <a href="boards.html">Path</a>
+        <a href="boards.html">To the Boards Page!</a>
     </p>
+    <!-- takes you to my github -->
     <p>
         <a href="https://github.com/KitiK629/CSC102">Caitlin's GitHub</a>
     </p>
 </body>
+<!-- The most helpful thing I learned was that ctrl ? insterts a comment tag -->
 </html>
