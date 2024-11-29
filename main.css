@@ -1,4 +1,53 @@
+/* 
+declaration block:
 
-body {
+    selector{
+        property: value;
+        property2: value;
+    }
+*/
+
+body{
+    background-image: url("grunge-with-decorative-frame_1048-13812.avif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
     background-color: lightgray;
+    color: rgb(255, 255, 255);
 }
+
+nav{
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+#memeImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    background-image: url("colorful-bubble-art-black-background-abstract-style_53876-128387.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 213, 0);
+}
+
