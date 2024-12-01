@@ -90,17 +90,26 @@ function handleResultValidation() {
     handlePlayerChange();
 }
 
+// Here we will grab the 'data-cell-index' attribute from 
+// the clicked cell to identify where that cell is in our grid. 
 function handleCellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
     const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
 
+    // this checks if the cell has already been played
+    // or if the game is paused, if either is true
+    // this line of code gets ignored
     if(gameState[clickedCellIndex] !== "" || !gameActive)
         return;
 
+    // if everything is in order, proceed with gameflow
     handleCellPlayed(clickedCell, clickedCellIndex);
     handleResultValidation();
 }
 
+// this function is for when the button restart
+// game is clicked, it takes everything back
+// to those top few lines of code
 function handleRestartGame() {
     gameActive = true;
     currentPlayer = "X";
@@ -109,6 +118,7 @@ function handleRestartGame() {
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
 }
 
-
+// this adds everything together along
+// with the restart button
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
