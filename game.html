@@ -1,0 +1,50 @@
+<!-- Caitlin Hiner -->
+    <!-- Header -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <!-- Title -->
+        <title>Tic-Tac-Toe</title>
+        <!-- References the stylesheet -->
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <!-- Body -->
+    <body>
+        <!-- my navigation list -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="boards.html">Boards</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="https://github.com/KitiK629/CSC102">Caitlin's GitHub</a></li>
+        </ul>
+        <!-- This is where my game starts to explain 
+         what kind of game it is -->
+        <section>
+            <!-- Title of my game -->
+            <h1 class="game--title">Tic-Tac-Toe</h1>
+            <!-- Since my game is tictactoe it needs to all be
+             in one box on the screen, so a container was used -->
+            <div class="game--container">
+                <!-- I needed 9 boxes, in computing language its called a cell
+                 so I need 9 cells to make my tictactoe board -->
+                <div data-cell-index="0" class="cell"></div>
+                <div data-cell-index="1" class="cell"></div>
+                <div data-cell-index="2" class="cell"></div>
+                <div data-cell-index="3" class="cell"></div>
+                <div data-cell-index="4" class="cell"></div>
+                <div data-cell-index="5" class="cell"></div>
+                <div data-cell-index="6" class="cell"></div>
+                <div data-cell-index="7" class="cell"></div>
+                <div data-cell-index="8" class="cell"></div>
+            </div>
+            <!-- another header for whos up currently
+             or when the game is over -->
+            <h2 class="game--status"></h2>
+            <!-- restart button -->
+            <button class="game--restart">Restart Game</button>
+        </section>
+        <!-- javascript code reference -->
+        <script src="code.js"></script>
+    </body>
+</html>

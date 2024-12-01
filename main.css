@@ -7,6 +7,8 @@ declaration block:
     }
 */
 
+/* changes in the body for; background image, no repeat, scrolls with the page
+has a secondary background color of white, with white text */
 body{
     background-image: url("grunge-with-decorative-frame_1048-13812.avif");
     background-repeat: no-repeat;
@@ -16,6 +18,8 @@ body{
     color: rgb(255, 255, 255);
 }
 
+/* navigation properties for height, width, 
+floats left with a line height difference */
 nav{
     height: 600px;
     width: 200px;
@@ -24,11 +28,16 @@ nav{
     line-height: 30px;
 }
 
+/* nothing in footer but requirement
+for the assignment */
 footer{
     text-align: center;
     margin-right: 200px;
 }
 
+/* this was my first attempt to center my image, 
+it did not center, used a div tag,
+height and width of image */
 #memeImage{
     display: flex;
     justify-content: center;
@@ -37,12 +46,15 @@ footer{
     width: 350px;
 }
 
+/* the div tag defined where i wanted my image */
 div{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* h1 is my header, i changed;
+background image, size of image, and color of text */
 h1{
     text-align: center;
     background-image: url("colorful-bubble-art-black-background-abstract-style_53876-128387.avif");
@@ -51,19 +63,21 @@ h1{
     color: rgb(0, 213, 0);
 }
 
+/* my navigation list settings */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100px;
-    background-color: #f1f1f1;
-    border: 1px solid #555;
+    background-color: #030000;
+    border: 1px solid white;
 }
 
+/* individual list boxes */
 li a {
     display: block;
     width: 68px;
-    color: #000;
+    color: #ffffff;
     padding: 8px 16px;
     text-decoration: none;
     text-align: center;
@@ -76,6 +90,7 @@ li a:hover {
     color: white;
 }
 
+/* bottom border for lists */
 li:last-child {
     border-bottom: none;
 }

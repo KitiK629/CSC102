@@ -1,0 +1,97 @@
+/* This changes the body tag, in the body i changed
+the font, added a background image, no repeat on the image,
+the image scrolls with the page, and will cover the entire page */
+body {
+    font-family: "Arial", sans-serif;
+    background-image: url("square-with-purple-background-fire-middle_783884-233069.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: rgb(8, 2, 75);
+}
+
+/* this will center the game itself */
+section {
+    text-align: center;
+}
+
+/* This defines whats in the individual cells
+font type, width and height, put a shadow on the box
+for an added effect, along with font size */
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px 2px #ecd7ba;
+    border: 2px solid #ecd7ba;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+/* Changes the game title size, color, and adds a margin */
+.game--title {
+    font-size: 100px;
+    color: rgb(0, 213, 0);
+    margin: 10px auto;
+}
+
+/* This states that it will display in a grid
+that repeats for 3, end result is 3x3
+the game width, background color and marker colors are here */
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+    background-color: #11213a;
+    color: #04c0b2;
+}
+
+/* the game status message area */
+.game--status {
+    font-size: 50px;
+    color: rgb(0, 213, 0);
+    margin: 20px auto;
+}
+
+/* restart button settings */
+.game--restart {
+    background-color: #f7e4ac;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: #5586e2;
+    box-shadow: 2px 2px 2px 2px #d86c23;
+    border: 2px solid #d86c23;
+}
+
+/* from here down was copied from main stylesheet */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #030000;
+    border: 1px solid white;
+}
+
+li a {
+    display: block;
+    width: 68px;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+/* change link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li:last-child {
+    border-bottom: none;
+}
