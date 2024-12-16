@@ -1,0 +1,48 @@
+<!-- Caitlin Hiner -->
+<!-- Document type -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head section with title -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<!-- Body -->
+<body style="background-color: powderblue;">
+    <div class="main">
+        <!-- Make the box for the input -->
+        <div class="container"> 
+            <h1 style="text-align: center;">Palindrome Checker</h1>
+            <div style="text-align: center;" class="input-form">
+                <input type="text" id="textInput" placeholder="Enter text">
+                <!-- this button when clicked will run the javascript for the palindrome -->
+                <button onclick="checkPalindrome()">Check</button>
+            </div><br>
+            <!-- result -->
+            <div style="text-align: center;" class="result" id="result"></div>
+        </div>
+    </div>
+    <script>
+        function checkPalindrome() {
+    const textInput = document.getElementById('textInput').value;
+    const result = document.getElementById('result');
+
+    // Remove non-alphanumeric characters and convert to lowercase
+    const cleanString = textInput.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+    // Reverse the cleaned string
+    const reversedString = cleanString.split('').reverse().join('');
+
+    // Check if the cleaned string is equal to its reversed version
+    if (cleanString === reversedString) {
+        result.textContent = `"${textInput}" is a palindrome!`;
+        result.style.color = 'green';
+    } else {
+        result.textContent = `"${textInput}" is not a palindrome.`;
+        result.style.color = 'red';
+    }
+}
+    </script>
+</body>
+</html>
