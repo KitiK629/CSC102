@@ -44,5 +44,51 @@
     }
 }
     </script>
+    <!-- Page break -->
+    <br><br><hr style="height: 3px;border-width: o;color: gray;background-color: grey;">
+   
+   
+    <div class="container">
+        <h2 style="color: rgb(139, 0, 111);">Unlock the Secret</h2>
+        <!-- First Name Box -->
+        <label for="firstName">First Name:</label> <br>
+        <input type="text" id="firstName" name="firstName"><br> 
+        <!-- Last Name Box -->
+        <label for="lastName">Last Name:</label> <br>
+        <input type="text" id="lastName" name="lastName"><br> 
+        <!-- ZipCode Box -->
+        <label for="zipCode">Zip Code:</label> <br>
+        <input type="text" id="zipCode" name="zipCode"><br> <br>
+        <!-- Button -->
+        <button onclick="checkInput()">Reveal Message</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // Function to validate and display the secret message
+        function checkInput() {
+            let firstName = document.getElementById("firstName").value;
+            let lastName = document.getElementById("lastName").value;
+            let zipCode = document.getElementById("zipCode").value;
+            // Combine first and last name with a space
+            let fullName = firstName + " " + lastName;
+
+            // Check if full name is too long
+            if (fullName.length > 20) {
+                alert("Full name is too long!");
+                return;
+            } 
+
+            // Check if zip code is valid (only 5 digits)
+            if (zipCode.length !== 5 || isNaN(zipCode)) { 
+                alert("Please enter a valid 5-digit zip code!");
+                return;
+            } 
+
+            // If inputs are valid, display the secret message
+            document.getElementById("message").innerHTML = "The secret message is: 'Welcome, " + fullName + "!'";
+        }
+    </script>
+
 </body>
 </html>
